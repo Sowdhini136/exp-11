@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Garden Builder</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: lightgreen; color: purple; }
+    header { background: green; color: white; padding: 1rem; text-align: center; }
+    .container { display: flex; flex-wrap: wrap; padding: 1rem; gap: 1rem; }
+    .section { flex: 1; background: white; padding: 1rem; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); min-width: 300px; }
+    #garden-area { min-height: 200px; background: #c8e6c9; border: 2px dashed #388e3c; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+    ul { list-style-type: none; padding-left: 1rem; }
+    .btn { padding: 0.5rem 1rem; background: #43a047; color: white; border: none; border-radius: 5px; cursor: pointer; margin-top: 0.5rem; }
+    .btn:hover { background: #2e7d32; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌿 Virtual Garden Builder</h1>
+    <p>Design. Grow. Share.</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Garden Design Area -->
+    <div class="section" id="garden">
+      <h2>My Garden</h2>
+      <div id="garden-area">
+        🏡 Drag & Drop Plants Here!
+      </div>
+    </div>
+
+    <!-- Unlockable Items -->
+    <div class="section">
+      <h2>Unlocked Plants</h2>
+      <ul>
+        <li>🌻 Sunflower</li>
+        <li>🌵 Cactus</li>
+        <li>🌼 Daisy</li>
+      </ul>
+      <button class="btn">Unlock More</button>
+    </div>
+
+    <!-- Real-life Plant Points -->
+    <div class="section">
+      <h2>My Progress</h2>
+      <p>🌞 Sun Points: <strong>320</strong></p>
+      <p>🪴 Real Plants Cared: <strong>7</strong></p>
+      <button class="btn">Log Plant Activity</button>
+    </div>
+
+    <!-- Leaderboard -->
+    <div class="section">
+      <h2>🏆 Leaderboard</h2>
+      <ol>
+        <li>venu - 820 pts</li>
+        <li>Sowdhini - 790 pts</li>
+        <li>sarika - 740 pts</li>
+      </ol>
+    </div>
+
+    <!-- Social Sharing -->
+    <div class="section">
+      <h2>📤 Share My Garden</h2>
+      <button class="btn">Share on Instagram</button>
+      <button class="btn">Share on WhatsApp</button>
+    </div>
+
+  </main>
+
+</body>
+</html>
